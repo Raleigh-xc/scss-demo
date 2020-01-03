@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* 多行注释 loud comment*/
+/*
+ * 1 + 1 = 2*/
+/*! compressed mode */
+body {
+  font-size: 14px;
+}
+
+/* 变量 */
+.container {
+  color: red;
+  background-color: green;
+  font-size: 50px;
+  width: 30%;
+}
+
+/* 嵌套 */
+nav ul, nav .box, .tabs ul, .tabs .box {
+  background-color: #333;
+  color: #fff;
+}
+
+nav li, .tabs li {
+  display: inline-block;
+}
+
+nav li span, .tabs li span {
+  font-style: 12px;
+}
+
+/* 选择器 */
+.list > .item {
+  width: 30px;
+}
+
+.list + .item1 {
+  width: 100px;
+}
+
+.list ~ .item2 {
+  width: 80px;
+}
+
+.list:hover {
+  background-color: red;
+}

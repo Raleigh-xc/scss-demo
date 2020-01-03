@@ -1,0 +1,14 @@
+%common-box{
+  display: flex;
+}
+.box{
+  @extend %common-box;
+}
+.box1{
+  @extend %common-box;
+  background: red;
+}
+.box2{
+  @extend %common-box;
+  background: green;
+}

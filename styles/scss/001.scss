@@ -1,0 +1,50 @@
+// 单行注释 slient comment
+/* 多行注释 loud comment*/
+/*
+ * 1 + 1 = #{1 + 1}*/
+/*! compressed mode */
+body{
+  font-size: 14px;
+}
+
+/* 变量 */
+$color: red;
+$bg-color: green;
+.container{
+  $size: 100px;
+  $width: 80%;
+  color: $color;
+  background-color: #{$bg-color};
+  font-size: $size / 2;
+  width: $width / 2 - 10%;
+}
+
+/* 嵌套 */
+nav, .tabs {
+  ul, .box {
+    background-color: #333;
+    color: #fff;
+  }
+  li {
+    display: inline-block;
+    span {
+     font-style: 12px;
+    }
+  }
+}
+
+/* 选择器 */
+.list {
+  > .item{
+    width: 30px;
+  }
+  + .item1 {
+    width: 100px;
+  }
+  ~ .item2 {
+    width: 80px;
+  }
+  &:hover{
+    background-color: red;
+  }
+}

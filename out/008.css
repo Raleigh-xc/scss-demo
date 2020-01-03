@@ -1,0 +1,13 @@
+.box2, .box1, .box {
+  display: flex;
+}
+
+.box1 {
+  background: red;
+}
+
+.box2 {
+  background: green;
+}
+
+/*# sourceMappingURL=008.css.map */
