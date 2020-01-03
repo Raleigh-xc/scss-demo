@@ -1,5 +1,8 @@
 // _base.scss
-$color: blue;
-body{
-  background-color: #eee;
+$height: 100px !default;
+$width: 200px !default;
+
+.alert{
+  height: $height;
+  width: $width;
 }

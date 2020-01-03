@@ -27,6 +27,10 @@ nav, .tabs {
   }
   li {
     display: inline-block;
+    margin: {
+      top: 10px;
+      bottom: 5px;
+    }
     span {
      font-style: 12px;
     }
@@ -47,4 +51,48 @@ nav, .tabs {
   &:hover{
     background-color: red;
   }
+}
+
+/* 父级选择器 */
+/* 添加前缀 */
+.modal {
+  &:hover {
+    background: red;
+  }
+  .common & {
+    margin: 0;
+  }
+  :not(&) {
+    padding: 0;
+  }
+  &_b{
+    margin: 0;
+    &-c{
+      margin: 10px;
+    }
+  }
+}
+
+/* 自定义属性 */
+:root{
+  --color: #{$color};
+}
+.wrap{
+  color: var(--color);
+}
+
+/* 继承、占位选择器 */
+%common-box{
+  display: flex;
+}
+.box{
+  @extend %common-box;
+}
+.box1{
+  @extend %common-box;
+  background: red;
+}
+.box2{
+  @extend %common-box;
+  background: green;
 }

@@ -23,6 +23,8 @@ nav ul, nav .box, .tabs ul, .tabs .box {
 
 nav li, .tabs li {
   display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 nav li span, .tabs li span {
@@ -44,4 +46,50 @@ nav li span, .tabs li span {
 
 .list:hover {
   background-color: red;
+}
+
+/* 父级选择器 */
+/* 添加前缀 */
+.modal:hover {
+  background: red;
+}
+
+.common .modal {
+  margin: 0;
+}
+
+:not(.modal) {
+  padding: 0;
+}
+
+.modal_b {
+  margin: 0;
+}
+
+.modal_b-c {
+  margin: 10px;
+}
+
+/* 自定义属性 */
+:root {
+  --color: red;
+}
+
+.wrap {
+  color: var(--color);
+}
+
+/* 继承、占位选择器 */
+.box, .box1, .box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box1 {
+  background: red;
+}
+
+.box2 {
+  background: green;
 }
