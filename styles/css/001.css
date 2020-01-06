@@ -20,13 +20,11 @@ nav ul, nav .box, .tabs ul, .tabs .box {
   background-color: #333;
   color: #fff;
 }
-
 nav li, .tabs li {
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 5px;
 }
-
 nav li span, .tabs li span {
   font-style: 12px;
 }
@@ -35,15 +33,12 @@ nav li span, .tabs li span {
 .list > .item {
   width: 30px;
 }
-
 .list + .item1 {
   width: 100px;
 }
-
 .list ~ .item2 {
   width: 80px;
 }
-
 .list:hover {
   background-color: red;
 }
@@ -53,19 +48,15 @@ nav li span, .tabs li span {
 .modal:hover {
   background: red;
 }
-
 .common .modal {
   margin: 0;
 }
-
 :not(.modal) {
   padding: 0;
 }
-
 .modal_b {
   margin: 0;
 }
-
 .modal_b-c {
   margin: 10px;
 }
@@ -80,9 +71,7 @@ nav li span, .tabs li span {
 }
 
 /* 继承、占位选择器 */
-.box, .box1, .box2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.box2, .box1, .box {
   display: flex;
 }
 

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 模块化 */
+.wrap {
+  height: 100%;
+  width: 100%;
+  background-color: #ddd;
+  font-size: 14px;
+}
+
+/* 操作符 */
+.box1 {
+  width: 50%;
+}
+
+.box2 {
+  width: 45%;
+}

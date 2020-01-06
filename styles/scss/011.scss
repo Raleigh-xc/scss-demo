@@ -1,0 +1,15 @@
+/* 模块化 */
+@use 'common';
+.wrap{
+  @include common.full;
+  background-color: common.$bg-color;
+  font-size: 14px;
+}
+
+/* 操作符 */
+.box1{
+  width: 100 / 200 * 100%;
+}
+.box2{
+  width: 100px / 200px * 90%;
+}

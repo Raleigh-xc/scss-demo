@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* 多行注释 loud comment */
+html {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* 变量 */
+/* 插值 */
+body {
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #ddd;
+}
+
+/* 嵌套 */
+/* 选择器 */
+/* 父级选择器 */
+.nav ul {
+  padding: 0;
+  margin: 0;
+}
+.nav ul > li {
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+}
+.nav ul > li:last-child {
+  border: none;
+}
+.nav ul > li:hover {
+  background-color: #909399;
+}
+body .nav {
+  padding: 0;
+  margin: 0;
+}
+.nav__list {
+  position: relative;
+}
+
+/* 继承 */
+.tips, .tips-warning, .tips-success {
+  font-size: 14px;
+}
+
+.tips-success {
+  color: #67C23A;
+}
+
+.tips-warning {
+  color: #E6A23C;
+}
+
+/* 占位符选择器 */
+.btn-danger, .btn-primary {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #409EFF;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #F56C6C;
+  color: #fff;
+}
+
+/* 混入 */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+/* 函数 */
+.container {
+  font-size: 18px;
+}
+
+/* 模块化 */

@@ -1,0 +1,103 @@
+// 当行注释 slient comment
+/* 多行注释 loud comment */
+html{
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* 变量 */
+/* 插值 */
+$font-size: 14px;
+$color-primary: #409EFF;
+$color-success: #67C23A;
+$color-warning: #E6A23C;
+$color-danger: #F56C6C;
+$color-info: #909399;
+
+body{
+  $bg-color: #ddd;
+  font-size: $font-size;
+  line-height: #{$font-size};
+  background-color: $bg-color;
+}
+
+/* 嵌套 */
+/* 选择器 */
+/* 父级选择器 */
+.nav {
+  ul {
+    padding: 0;
+    margin: 0;
+    > li {
+      list-style: none; 
+      border-bottom: 1px solid #ddd; 
+      &:last-child {
+        border: none;
+      }
+      &:hover{
+        background-color: $color-info;
+      }
+    }
+  }
+  body & {
+    padding: 0;
+    margin: 0;
+  }
+  &__list{
+    position: relative;
+  }
+}
+
+/* 继承 */
+.tips {
+  font-size: $font-size;
+}
+.tips-success {
+  @extend .tips;
+  color: $color-success;
+}
+.tips-warning {
+  @extend .tips;
+  color: $color-warning;
+}
+ 
+/* 占位符选择器 */
+%btn{
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+}
+.btn-primary{
+  @extend %btn;
+  background-color: $color-primary;
+  color: #fff;
+}
+.btn-danger{
+  @extend %btn;
+  background-color: $color-danger;
+  color: #fff;
+}
+
+/* 混入 */
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+.avatar {
+  @include square(100px, $radius: 4px)
+}
+
+/* 函数 */
+@function transNums($num1, $num2){
+  @return ($num1 + $num2)/2;
+}
+.container{
+  font-size: transNums(12px, 24px);
+}
+
+/* 模块化 */
+
