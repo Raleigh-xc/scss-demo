@@ -1,0 +1,5 @@
+@use '../base/bootstrap';
+
+ul{
+  @include bootstrap.list-horizontal;
+}

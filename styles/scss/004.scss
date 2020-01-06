@@ -1,0 +1,6 @@
+@use '../base/at' as a;
+
+.btn{
+  @include a.round;
+  padding: 2px + a.$radius;
+}

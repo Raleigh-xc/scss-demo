@@ -1,0 +1,30 @@
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+
+.sidebar {
+  float: left;
+  margin-left: 64px;
+}
+
+.error, .error--serious {
+  border: 1px solid red;
+  background-color: #ccc;
+}
+.error--icon {
+  font-size: 20px;
+}
+
+.error--serious {
+  border-width: 3px;
+}
+
+.alert:hover {
+  font-weight: bold;
+}
+
+.alert:hover {
+  color: red;
+}
