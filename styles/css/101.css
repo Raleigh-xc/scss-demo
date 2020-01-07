@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* 
+ * 多行注释 */
+html {
+  font-size: 14px;
+}
+
+.tips {
+  color: #F56C6C;
+}

@@ -1,0 +1,31 @@
+// 单行注释
+/* 
+ * 多行注释 */
+html{
+  font-size: 14px;
+}
+
+$color-primary: #409EFF;
+$color-success: #67C23A;
+$color-warning: #E6A23C;
+$color-danger: #F56C6C;
+$color-info: #909399;
+@mixin theme ($color: primary){
+  @if $color == success {
+    color: $color-success;
+  } @else if $color == warning {
+    color: $color-warning;
+  } @else if $color == warning {
+    color: $color-warning;
+  } @else if $color == danger {
+    color: $color-danger;
+  } @else if $color == info {
+    color: $color-info;
+  } @else {
+    color: $color-primary;
+  }
+}
+
+.tips {
+  @include theme(danger)
+}
